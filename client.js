@@ -1,4 +1,5 @@
-const socket = io("http://localhost:8000");
+const socket = io("https://chatsapp-zq48.onrender.com");
+
 
 const form = document.getElementById("send-form");
 const messageInput = document.getElementById("messageInp");
