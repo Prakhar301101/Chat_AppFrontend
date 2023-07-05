@@ -4,47 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat App</title>
-
+    <link rel="shortcut icon" href="./public/images/favicon_io/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="bg-slate-700">
+  <body style="background: rgb(5,49,51);
+  background: linear-gradient(90deg, rgba(5,49,51,1) 0%, rgba(45,111,140,1) 50%, rgba(5,49,51,1) 100%);">
     <div class="flex flex-col items-center">
       <img
         src="./public/images/chat_logo.avif"
         alt="Logo"
-        class="logo w-16 border-1 border-solid rounded-lg my-3"
+        class="logo w-16 border-1 border-solid rounded-lg my-2"
       />
-      <h1 class="font-bold text-1xl sm:text-3xl text-white py-1 font-mono">
-        Welcome to my ChatApp!!!
+      <h1 class="font-bold text-2xl sm:text-4xl text-white py-1 font-mono">
+        Welcome to my ChatApp!
       </h1>
     </div>
     <div
-      class="msg-area bg-slate-600 m-auto h-[75vh] max-w-5xl border-2 border-solid border-slate-950 shadow-sm rounded-xl overflow-auto mb-2"
-    >
+      class="msg-area m-auto h-[75vh] max-w-5xl border-2 border-solid border-slate-950 shadow-sm rounded-xl overflow-auto mb-2"
+      style="background: rgb(5,49,51);
+      background: linear-gradient(90deg, rgba(5,49,51,1) 0%, rgba(45,45,140,1) 50%, rgba(5,49,51,1) 100%);;"
+      >
       
     </div>
-    <div class="send block m-auto text-center max-w-6xl w-full">
-      <form action="#" id="send-form">
+    <div class="send  m-auto max-w-5xl ">
+      <form action="#" id="send-form" class="flex justify-between my-2">
         <input
           type="text"
           name="messageInp"
           id="messageInp"
-          class="h-8 w-4/5 p-1 text-xl border-2 border-solid border-slate-950 rounded-lg"
+          class="h-8 w-5/6 mr-1 py-1 px-3 text-xl border-2 border-solid border-slate-950 rounded-lg"
         />
         <button
           type="submit"
-          class="bg-white w-1/12 h-8 text-center border-2 border-solid border-slate-950 rounded-lg p-1"
+          class="bg-white w-1/6 h-8 ml-1 border-2 border-solid border-slate-950 rounded-lg px-1 py-1"
         >
           Send
         </button>
       </form>
     </div>
-     <script src="https://chatsapp-zq48.onrender.com/socket.io/socket.io.js"></script>
+    <script src="https://chatsapp-zq48.onrender.com/socket.io/socket.io.js"></script>
     <script
       src="https://cdn.socket.io/4.4.1/socket.io.min.js"
       integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
       crossorigin="anonymous"
     ></script>
-    <script src="./client.js"></script>
+    <script src="/frontend/client.js"></script>
   </body>
 </html>

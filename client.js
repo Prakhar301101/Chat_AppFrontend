@@ -1,6 +1,5 @@
 const socket = io("https://chatsapp-zq48.onrender.com");
 
-
 const form = document.getElementById("send-form");
 const messageInput = document.getElementById("messageInp");
 const messageContainer = document.querySelector(".msg-area");
@@ -48,7 +47,7 @@ socket.emit("new-user-joined", name);
 
 socket.on("user-joined", (name) => {
   
-    appendtext(`${name} joined the chat`, "right");
+    appendtext(`${name} joined the chat!`, "left");
     userJoinLeft.play();
 
 });
